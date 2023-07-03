@@ -1,7 +1,7 @@
 import random
 
 def repeat_text_with_emoji(text, count):
-    emojis = ["😊", "🎉", "🔥", "❤️", "👍", "😄", "🌟", "🌈", "💖", "🐾"]
+    emojis = ["😊", "😍", "😒", "❤️", "🥹", "🥰", "😘", "💗", "💖", "🖤"]
     repeated_text = text * count
     random_emoji = random.choice(emojis)
     repeated_text_with_emoji = repeated_text + random_emoji
@@ -17,7 +17,7 @@ for _ in range(input_count):
     repeated_texts_with_emojis.append(repeated_text_with_emoji)
 
 # Save texts to a file
-filename = "repeated_texts.txt"
+filename = "text.txt"
 with open(filename, "w") as file:
     file.write('\n'.join(repeated_texts_with_emojis))
 
