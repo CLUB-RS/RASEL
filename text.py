@@ -10,11 +10,15 @@ def repeat_text_with_emoji(text, count):
 input_text = input("Enter the text to repeat: ")
 input_count = int(input("Enter the number of times to repeat: "))
 
-repeated_text_with_emoji = repeat_text_with_emoji(input_text, input_count)
+# Generate repeated text with emojis
+repeated_texts_with_emojis = []
+for _ in range(input_count):
+    repeated_text_with_emoji = repeat_text_with_emoji(input_text, 1)
+    repeated_texts_with_emojis.append(repeated_text_with_emoji)
 
-# Save text to a file
+# Save texts to a file
 filename = "text.txt"
 with open(filename, "w") as file:
-    file.write(repeated_text_with_emoji)
+    file.write('\n'.join(repeated_texts_with_emojis))
 
-print(f"Repeated text with random emoji saved to {filename}")
+print(f"Repeated texts with random emojis saved to {filename}")
