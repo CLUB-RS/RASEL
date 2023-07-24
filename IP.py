@@ -42,9 +42,3 @@ if __name__ == "__main__":
         os.system(f"start {fb_url}")
     else:
         print("No information available.")
-        
-        # Open the Facebook URL using webbrowser
-        fb_url = "https://www.facebook.com/fb.rasel.ahammed"
-        webbrowser.open(fb_url)
-    else:
-        print("No information available.")
