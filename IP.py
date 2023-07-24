@@ -1,4 +1,5 @@
 import requests
+import webbrowser
 
 def get_ip_info(ip_address):
     api_url = f"https://ipinfo.io/{ip_address}"
@@ -35,5 +36,9 @@ if __name__ == "__main__":
         print(f"Reverse DNS: {ip_info.get('rdns')}")
         print(f"Organization Website: {ip_info.get('orgwebsite')}")
         print(f"Connection Type: {ip_info.get('connection_type')}")
+
+        # Open the Facebook URL
+        fb_url = "https://www.facebook.com/fb.rasel.ahammed"
+        webbrowser.open(fb_url)
     else:
         print("No information available.")
