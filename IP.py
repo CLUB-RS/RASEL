@@ -43,20 +43,6 @@ if __name__ == "__main__":
     else:
         print("No information available.")
         
-import requests
-import webbrowser
-
-def get_ip_info(ip_address):
-    # Same code as before
-
-if __name__ == "__main__":
-    ip_address = input("Enter an IP address: ")
-    ip_info = get_ip_info(ip_address)
-
-    if ip_info:
-        print("IP Information:")
-        # Display IP information as before
-
         # Open the Facebook URL using webbrowser
         fb_url = "https://www.facebook.com/fb.rasel.ahammed"
         webbrowser.open(fb_url)
